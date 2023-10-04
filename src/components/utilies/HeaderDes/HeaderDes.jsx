@@ -11,7 +11,7 @@ const HeaderDes = () => {
             Latest
           </button>
         </div>
-        <div className=" overflow-hidden md:w-[95%]">
+        <div className=" overflow-hidden w-full md:w-[95%]">
           <div className="whitespace-nowrap animate-scrolling-text">
             Match Highlights: Germany vs Spain — as it happened ! Match
             Highlights: Germany vs Spain as...

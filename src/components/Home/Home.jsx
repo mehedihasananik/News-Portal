@@ -1,7 +1,16 @@
+import Category from "./Category/Category";
+import HomeBlogs from "./HomeBlogs/HomeBlogs";
+import HomeSocial from "./HomeSocial/HomeSocial";
+
 const Home = () => {
   return (
-    <div>
-      <h3>home</h3>
+    <div className="container mx-auto">
+      <div className="flex flex-col md:flex-row justify-center ">
+        {" "}
+        <Category />
+        <HomeBlogs />
+        <HomeSocial />
+      </div>
     </div>
   );
 };
