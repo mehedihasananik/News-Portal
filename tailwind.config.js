@@ -20,6 +20,7 @@ module.exports = withMT({
       },
       fontFamily: {
         'Poppins': ['Poppins', 'sans-serif'],
+        "OldEnglish": ['UnifrakturCook', 'cursive']
       },
     },
   },

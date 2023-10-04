@@ -8,7 +8,7 @@ import {
   Link,
   Outlet,
 } from "react-router-dom";
-import { Footer, Header, Home, SubHeader } from "./components";
+import { Footer, Header, Home, Login, SignUp, SubHeader } from "./components";
 
 const Layout = () => {
   return (
@@ -29,6 +29,14 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/signup",
+        element: <SignUp />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
       },
     ],
   },
