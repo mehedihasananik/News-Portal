@@ -8,18 +8,9 @@ import {
   Link,
   Outlet,
 } from "react-router-dom";
-import { Footer, Header, Home, Login, SignUp, SubHeader } from "./components";
-
-const Layout = () => {
-  return (
-    <div>
-      <SubHeader />
-      <Header />
-      <Outlet />
-      <Footer />
-    </div>
-  );
-};
+import { Home, Login, SignUp } from "./components";
+import SingleCategory from "./components/SingleCategory/SingleCategory";
+import Layout from "./components/Layout/Layout";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login />,
+      },
+      {
+        path: "/category/:id",
+        element: <SingleCategory />,
       },
     ],
   },
